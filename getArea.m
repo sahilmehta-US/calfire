@@ -2,7 +2,7 @@ clf;
 
 mapshow(S4, 'FaceColor', 'cyan')
 
-A = zeros(1,51);
+A = zeros(1,71);
 
 for index = 1:length(Fires_2020)
     fire = Fires_2020(index);
@@ -10,7 +10,7 @@ for index = 1:length(Fires_2020)
         polyFire = polyshape(fire.X,fire.Y);
         polySpecies = polyshape(S4(index2).X,S4(index2).Y);
         polyout = intersect(polyFire, polySpecies);
-        A(51) = A(51) + area(polyout);
+        A(71) = A(71) + area(polyout);
     end
        
 end
