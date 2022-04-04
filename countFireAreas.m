@@ -1,4 +1,6 @@
-function [areasOverTime, numFiresOverTime] = countFireAreas(areasOverTime, numFiresOverTime, polySpecies, SCenter, Fires)
+
+%OUTDATED
+function [areasOverTime, numFiresOverTime, intersectingFires] = countFireAreas(areasOverTime, numFiresOverTime, intersectingFires, polySpecies, SCenter, Fires)
     for i = 1:length(Fires)
         fire = Fires(i);
         fyear = str2num(fire.FIRE_YEAR);
@@ -10,6 +12,7 @@ function [areasOverTime, numFiresOverTime] = countFireAreas(areasOverTime, numFi
         if (farea > 0)
             numFiresOverTime(findex) = numFiresOverTime(findex) + 1;
             areasOverTime(findex) = areasOverTime(findex) + farea;
+            intersectingFires{findex}(length(intersectingFires{findex})+1) = fire;
         end
     end
 end

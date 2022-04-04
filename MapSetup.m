@@ -10,6 +10,7 @@ Fires_80_89 = shaperead('1980_1989WFDSSHistoricPerimeters/HistoricFirePerimeters
 Fires_90_99 = shaperead('1990_1999WFDSSHistoricPerimeters/HistoricFirePerimeters_1990_1999.shp');
 Fires_00_09 = shaperead('2000_2009WFDSSHistoricPerimeters/HistoricFirePerimeters_2000_2009.shp');
 Fires_19 = shaperead('2019_WFDSSHistoricPerimeters/HistoricFirePerimeters_2019.shp');
+Fires_20
 Precip_2010 = imread('Droughts/20220215_usdm.tif');
 Fires_all = shaperead('California_Fire_Perimeters_(all)\California_Fire_Perimeters__1950__.shp');
 
